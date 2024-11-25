@@ -8,6 +8,7 @@ import lombok.experimental.FieldDefaults;
 @Table(name = "departments", schema = "dbo")
 @Data
 @Builder
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
