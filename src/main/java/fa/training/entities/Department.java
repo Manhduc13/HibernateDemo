@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "departments", schema = "dbo")
 @Data
@@ -20,4 +22,7 @@ public class Department {
     String name;
     @Column(columnDefinition = "nvarchar(500)")
     String description;
+
+    @OneToMany(mappedBy = "department")
+    Set<Employee> employees;
 }

@@ -18,8 +18,12 @@
         <!-- Echo all executed SQL to stdout -->
         <property name="show_sql">true</property>
         <!-- Drop and re-create the database schema on startup -->
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hbm2ddl.auto">create</property>
 
         <mapping class="fa.training.entities.Department"/>
+        <mapping class="fa.training.entities.Employee"/>
+        <mapping class="fa.training.entities.Address"/>
+        <mapping class="fa.training.entities.Project"/>
+        <mapping class="fa.training.entities.EmployeeProject"/>
     </session-factory>
 </hibernate-configuration>

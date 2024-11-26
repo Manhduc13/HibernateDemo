@@ -16,5 +16,26 @@ public class Main {
         departments.forEach(department -> {
             System.out.println(department.toString());
         });
+//        EmployeeRepository employeeRepository = new EmployeeRepositoryImpl();
+//        Employee employee = Employee.builder()
+//                .firstName("Duc")
+//                .lastName("Manh")
+//                .email("johnwick@doe.com")
+//                .phoneNumber("0132456789")
+//                .hireDate(LocalDateTime.now())
+//                .salary(3000)
+//                .dateOfBirth(LocalDateTime.now())
+//                .insertedAt(ZonedDateTime.now())
+//                .updatedAt(ZonedDateTime.now())
+//                .deletedAt(ZonedDateTime.now())
+//                .isActive(true)
+//                .build();
+//
+//        employeeRepository.create(employee);
+//        List<Employee> employees = employeeRepository.getAll();
+//        employees.forEach(e -> {
+//            System.out.println(e.toString());
+//        });
+
     }
 }
